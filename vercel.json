@@ -6,7 +6,7 @@
     },
     "functions": {
         "api/index.js": {
-          "excludeFiles": "/public/**"
+          "includeFiles": "/api/index.js"
 
         }
       },
