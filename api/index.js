@@ -21,7 +21,7 @@ app.use(
   '/api/images/',
   expressSharp({
     imageAdapter: new httpAdapter({
-      prefixUrl: 'https://azure.brian.dev/images/'}),
+      prefixUrl: 'http://azure.brian.dev/images/'}),
   })
 )
 app.use("/api/graphql", jsonGraphqlExpress(data));
