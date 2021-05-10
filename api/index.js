@@ -18,7 +18,7 @@ console.log(__dirname);
 const router = jsonServer.router(data, { foreignKeySuffix: '_id' })
 router.use(middlewares)
 app.use(
-  '/api/g',
+  '/api/g/images/',
   expressSharp({
     imageAdapter: new fsAdapter(path.join(__dirname, '..', 'images')),
   })
