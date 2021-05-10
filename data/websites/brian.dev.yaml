@@ -1,0 +1,21 @@
+url: https://brian.dev
+profile_id: bketelsen
+brand_name: 'Brian Ketelsen'
+primary_navigation:
+  - name: Home
+    route: '/'
+  - name: Blog
+    route: '/articles'
+  - name: Categories
+    route: '/categories'
+  - name: About
+    route: '/about'
+secondary_navigation:
+  - name: Home
+    route: '/'
+  - name: Alt About
+    route: '/altabout'
+  - name: Alt Blog
+    route: '/altarticles'
+  - name: Categories
+    route: '/categories'
