@@ -4,23 +4,20 @@ const jsonGraphqlExpress = require("json-graphql-server").default
 const jsonServer = require('json-server')
 const expressSharp = require('express-sharp').expressSharp
 const fsAdapter = require('express-sharp').FsAdapter
-
+var data = require('../data/.build/data.json') 
 const path = require('path')
-const data = fetch(
-  "https://github.com/bketelsen/bkml/releases/download/blox/data.json"
-).json();
+
 const app = require("express")();
 const middlewares = jsonServer.defaults({
   readOnly: true
 })
-console.log(__dirname);
 
 const router = jsonServer.router(data, { foreignKeySuffix: '_id' })
 router.use(middlewares)
 app.use(
   '/api/images/',
   expressSharp({
-    imageAdapter: new fsAdapter(path.join(__dirname, '..', 'images')),
+    imageAdapter: new fsAdapter(path.join(__dirname, '..', 'data','static','images')),
   })
 )
 app.use("/api/graphql", jsonGraphqlExpress(data));
