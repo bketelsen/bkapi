@@ -4,13 +4,16 @@ const jsonGraphqlExpress = require("json-graphql-server").default
 const jsonServer = require('json-server')
 const expressSharp = require('express-sharp').expressSharp
 const fsAdapter = require('express-sharp').FsAdapter
-var data = require('../data/.build/data.json') 
+
 const path = require('path')
 
 const app = require("express")();
 const middlewares = jsonServer.defaults({
   readOnly: true
 })
+const data = fetch(
+  "https://github.com/bketelsen/bkapi/releases/download/blox/data.json"
+).json();
 
 const router = jsonServer.router(data, { foreignKeySuffix: '_id' })
 router.use(middlewares)
