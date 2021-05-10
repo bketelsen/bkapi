@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.903.0",
     "express": "^4.17.1",
     "express-sharp": "^4.2.24",
     "json-graphql-server": "^2.2.3",
