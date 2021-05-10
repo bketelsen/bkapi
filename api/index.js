@@ -2,8 +2,8 @@ const fetch = require("sync-fetch");
 
 const jsonGraphqlExpress = require("json-graphql-server").default
 const jsonServer = require('json-server')
-const expressSharp = require('express-sharp')
-
+const expressSharp = require('express-sharp').expressSharp()
+const fsAdapter = require('express-sharp').FsAdapter
 
 const path = require('path')
 const data = fetch(
@@ -24,7 +24,7 @@ app.use("/api/rest", router);
 app.use(
   '/api/g',
   expressSharp({
-    imageAdapter: new expressSharp.FsAdapter(path.join(__dirname, 'images')),
+    imageAdapter: new fsAdapter(path.join(__dirname, 'images')),
   })
 )
 
