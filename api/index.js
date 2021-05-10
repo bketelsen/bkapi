@@ -18,5 +18,12 @@ router.use(middlewares)
 app.use("/api/graphql", jsonGraphqlExpress(data));
 app.use("/api/rest", router);
 
+app.use(
+  '/api/g',
+  expressSharp({
+    imageAdapter: new FsAdapter(path.join(__dirname, 'images')),
+  })
+)
+
 
 module.exports = app
