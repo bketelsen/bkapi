@@ -3,9 +3,9 @@ const fetch = require("sync-fetch");
 const jsonGraphqlExpress = require("json-graphql-server").default
 const jsonServer = require('json-server')
 const expressSharp = require('express-sharp').expressSharp
-const fsAdapter = require('express-sharp').FsAdapter
+const httpAdapter = require('express-sharp').HttpAdapter
 
-const path = require('path')
+
 
 const app = require("express")();
 const middlewares = jsonServer.defaults({
@@ -20,7 +20,8 @@ router.use(middlewares)
 app.use(
   '/api/images/',
   expressSharp({
-    imageAdapter: new fsAdapter(path.join(__dirname, '..', 'public','images')),
+    imageAdapter: new httpAdapter({
+      prefixUrl: 'https://azure.brian.dev/images/'}),
   })
 )
 app.use("/api/graphql", jsonGraphqlExpress(data));
