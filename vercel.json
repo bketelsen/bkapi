@@ -4,5 +4,11 @@
     "github": {
       "enabled": false
     },
+    "functions": {
+        "api/index.js": {
+          "excludeFiles": "public/*"
+
+        }
+      },
     "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
 }
