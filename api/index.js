@@ -3,7 +3,8 @@ const fetch = require("sync-fetch");
 const jsonGraphqlExpress = require("json-graphql-server").default
 const jsonServer = require('json-server')
 const expressSharp = require('express-sharp')
-const FsAdapter = require('express-sharp/dist/adapter/fs.adapter')
+
+
 const path = require('path')
 const data = fetch(
   "https://github.com/bketelsen/bkml/releases/download/blox/data.json"
@@ -23,7 +24,7 @@ app.use("/api/rest", router);
 app.use(
   '/api/g',
   expressSharp({
-    imageAdapter: new FsAdapter(path.join(__dirname, 'images')),
+    imageAdapter: new expressSharp.FsAdapter(path.join(__dirname, 'images')),
   })
 )
 
