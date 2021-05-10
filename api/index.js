@@ -17,16 +17,16 @@ console.log(__dirname);
 
 const router = jsonServer.router(data, { foreignKeySuffix: '_id' })
 router.use(middlewares)
-
-app.use("/api/graphql", jsonGraphqlExpress(data));
-app.use("/api/rest", router);
-
 app.use(
   '/api/g',
   expressSharp({
-    imageAdapter: new fsAdapter(path.join(__dirname, 'images')),
+    imageAdapter: new fsAdapter(path.join(__dirname, '..', 'images')),
   })
 )
+app.use("/api/graphql", jsonGraphqlExpress(data));
+app.use("/api/rest", router);
+
+
 
 
 module.exports = app
