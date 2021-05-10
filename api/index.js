@@ -2,7 +2,7 @@ const fetch = require("sync-fetch");
 
 const jsonGraphqlExpress = require("json-graphql-server").default
 const jsonServer = require('json-server')
-const expressSharp = require('express-sharp').expressSharp()
+const expressSharp = require('express-sharp').expressSharp
 const fsAdapter = require('express-sharp').FsAdapter
 
 const path = require('path')
