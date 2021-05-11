@@ -8,9 +8,7 @@ const httpAdapter = require('express-sharp').HttpAdapter
 
 
 const app = require("express")();
-const middlewares = jsonServer.defaults({
-  readOnly: true
-})
+const middlewares = jsonServer.defaults()
 const data = fetch(
   "https://github.com/bketelsen/bkapi/releases/download/blox/data.json"
 ).json();
