@@ -8,7 +8,7 @@ const httpAdapter = require('express-sharp').HttpAdapter
 var cors = require('cors')
 
 const app = require("express")();
-app.use(cors)
+app.use(cors())
 const data = fetch(
   "https://github.com/bketelsen/bkapi/releases/download/blox/data.json"
 ).json();
