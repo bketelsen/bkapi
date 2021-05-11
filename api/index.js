@@ -15,7 +15,7 @@ const data = fetch(
 ).json();
 
 const router = jsonServer.router(data, { foreignKeySuffix: '_id' })
-router.use(middlewares)
+router.use(cors)
 app.use(
   '/api/images/',
   expressSharp({
