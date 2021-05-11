@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   aws-sdk: ^2.903.0
+  cors: ^2.8.5
   express: ^4.17.1
   express-sharp: ^4.2.24
   got: ^11.8.2
@@ -11,6 +12,7 @@ specifiers:
 
 dependencies:
   aws-sdk: 2.903.0
+  cors: 2.8.5
   express: 4.17.1
   express-sharp: 4.2.24_6cc1c0417d41eac0709cc61e89559e8d
   got: 11.8.2
