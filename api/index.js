@@ -9,7 +9,6 @@ var cors = require('cors')
 
 const app = require("express")();
 app.use(cors)
-const middlewares = jsonServer.defaults()
 const data = fetch(
   "https://github.com/bketelsen/bkapi/releases/download/blox/data.json"
 ).json();
