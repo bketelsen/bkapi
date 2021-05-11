@@ -13,9 +13,8 @@ const middlewares = jsonServer.defaults()
 const data = fetch(
   "https://github.com/bketelsen/bkapi/releases/download/blox/data.json"
 ).json();
-
 const router = jsonServer.router(data, { foreignKeySuffix: '_id' })
-router.use(cors)
+
 app.use(
   '/api/images/',
   expressSharp({
