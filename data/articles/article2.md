@@ -21,7 +21,7 @@ Ut dignissimos sapiente culpa rerum pariatur consequatur. Corporis suscipit ad c
 
 Porro eum id sit quia expedita. Alias expedita asperiores. Corporis ex eum atque cum ea. change
 
-```js
+```
 function bob() {
 	return true;
 }
