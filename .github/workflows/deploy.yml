@@ -17,10 +17,11 @@ jobs:
           directory: data
       - name: Blox Render
         id: render
-        uses: cueblox/render-action@v0.0.1
+        uses: cueblox/render-action@v0.0.2
         with:
           directory: data # Default .
-          extraArgs: --quiet -t articles.txt.tmpl -w articles > ../articles.sh # Default ""
+          extraArgs: --quiet -t articles.txt.tmpl -w articles
+          target: ../articles.sh # Default ""
       - name: Create OG Images
         id: og
         uses: bketelsen/azureog-action@v0.0.2
