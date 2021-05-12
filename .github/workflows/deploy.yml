@@ -15,6 +15,13 @@ jobs:
         uses: cueblox/github-action@v0.0.8
         with:
           directory: data
+      - name: Blox Render
+        id: render
+        uses: cueblox/render-action@v0.0.1
+        with:
+          directory: data # Default .
+          extraArgs: --quiet -t articles.txt.tmpl -w articles > ../articles.sh # Default ""
+
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"

@@ -1,5 +1,5 @@
 #!/bin/bash
 
 {{ range . -}}
-~/go/bin/azureog --bgImg static/og-standard.png -fontPath static/FiraSans-Light.ttf -output static/images/og-{{.id}}.png -title "{{.title}}"
-{{- end }}
+azureog --bgImg public/og-standard.png -fontPath public/FiraSans-Light.ttf -output public/images/og/og-{{.id}}.png -title "{{.title}}"
+{{ end }}
