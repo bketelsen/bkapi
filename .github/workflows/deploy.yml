@@ -41,6 +41,12 @@ jobs:
         with:
           directory: .
           script: pages.sh
+      - name: Process Images
+        id: images
+        uses: bketelsen/image-action@v0.0.1
+        with:
+          output-directory: ./public/g/images
+          source-directory: ./public/images
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
