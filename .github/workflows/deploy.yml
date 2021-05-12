@@ -15,19 +15,32 @@ jobs:
         uses: cueblox/github-action@v0.0.8
         with:
           directory: data
-      - name: Blox Render
-        id: render
+      - name: Blox Render articles
+        id: renderarticles
         uses: cueblox/render-action@v0.0.2
         with:
           directory: data # Default .
           extraArgs: --quiet -t articles.txt.tmpl -w articles
           target: ../articles.sh # Default ""
+      - name: Blox Render pages
+        id: renderpages
+        uses: cueblox/render-action@v0.0.2
+        with:
+          directory: data # Default .
+          extraArgs: --quiet -t pages.txt.tmpl -w pages
+          target: ../pages.sh # Default ""
       - name: Create OG Images
         id: og
         uses: bketelsen/azureog-action@v0.0.2
         with:
           directory: .
           script: articles.sh
+      - name: Create OG Images for pages
+        id: ogpages
+        uses: bketelsen/azureog-action@v0.0.2
+        with:
+          directory: .
+          script: pages.sh
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
