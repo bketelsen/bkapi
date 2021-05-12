@@ -21,7 +21,12 @@ jobs:
         with:
           directory: data # Default .
           extraArgs: --quiet -t articles.txt.tmpl -w articles > ../articles.sh # Default ""
-
+      - name: Create OG Images
+        id: og
+        uses: bketelsen/azureog-action@v0.0.1
+        with:
+          directory: .
+          script: articles.sh
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
