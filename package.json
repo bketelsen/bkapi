@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.js --license licenses.txt",
+    "images": "pnpm run build && node dist/index.js public/images public/g/images",
     "local": "vercel dev --listen 4000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@11ty/eleventy-img": "^0.8.3",
     "aws-sdk": "^2.903.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
