@@ -44,7 +44,7 @@ jobs:
           script: pages.sh
       - name: Process Images
         id: images
-        uses: bketelsen/image-action@v0.0.7
+        uses: bketelsen/image-action@v0.0.8
         with:
           output-directory: ./public/g/images
           source-directory: ./public/images
