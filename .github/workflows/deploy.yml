@@ -46,6 +46,7 @@ jobs:
         id: images
         uses: bketelsen/image-action@v0.0.8
         with:
+          directory: .
           output-directory: ./public/g/images
           source-directory: ./public/images
       - uses: marvinpinto/action-automatic-releases@latest
