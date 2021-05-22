@@ -11,7 +11,7 @@ export async function processImages(src, target) {
   const files = await readdir(imageDir, { withFileTypes: true });
 
   try {
-    const jsonString = fs.readFileSync("./data/.build/data.json");
+    const jsonString = fs.readFileSync("data/.build/data.json");
     const mydata = JSON.parse(jsonString);
     console.log(mydata);
 
@@ -34,6 +34,7 @@ export async function processImages(src, target) {
         const extension = extname(file.name);
         const name = basename(file.name, extension);
         const idx = mydata["images"].findIndex(i => { return i.id === name })
+        console.log(name,idx)
         mydata["images"][idx]["formats"] = stats
       }
       if (file.isDirectory()) {
