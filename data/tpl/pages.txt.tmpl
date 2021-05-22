@@ -1,5 +1,5 @@
 #!/bin/bash
 mkdir -p public/images/og/pages
 {{ range . -}}
-azureog --bgImg public/og-standard.png -fontPath public/FiraSans-Light.ttf -output public/images/og/pages/{{.id}}.png -title "{{.title}}"
+azureog --bgImg public/og-standard.png -fontPath public/FiraSans-Light.ttf -output public/og/pages/{{.id}}.png -title "{{.title}}"
 {{ end }}

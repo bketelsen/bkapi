@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "ncc build index.js --license licenses.txt",
-    "images": "npm run build && node dist/index.js public/images public/g/images",
+    "images": "node dist/index.js public/images public/g/images",
     "local": "vercel dev --listen 4000"
   },
   "keywords": [],
