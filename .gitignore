@@ -39,3 +39,4 @@ dist/
 
 # secrets
 scripts/azuresp.json
+scripts/deleteblobs.sh

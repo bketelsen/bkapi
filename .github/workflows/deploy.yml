@@ -42,6 +42,7 @@ jobs:
         with:
           directory: .
           script: pages.sh
+      - run: chmod 777 data/.build/data.json
       - name: Use Node.js 14
         uses: actions/setup-node@v1
         with:
@@ -57,7 +58,7 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-            az storage blob upload-batch --account-name bkapi -d 'images' -s .
+            az storage blob upload-batch --account-name bkapi -d 'images' -s public
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
         with:
