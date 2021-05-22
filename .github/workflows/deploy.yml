@@ -15,7 +15,7 @@ jobs:
         uses: cueblox/github-action@v0.0.8
         with:
           directory: data
-          extraArgs: --referential-integrity --images --sync # Default ""
+          extraArgs: --referential-integrity --images 
       - name: Blox Render articles
         id: renderarticles
         uses: cueblox/render-action@v0.0.2
@@ -42,12 +42,31 @@ jobs:
         with:
           directory: .
           script: pages.sh
-      - name: Process Images
-        id: images
-        uses: bketelsen/image-action@v0.0.9
+      - name: Use Node.js 14
+        uses: actions/setup-node@v1
         with:
-          output-directory: public/g/images
-          source-directory: public/images
+          node-version: 14.x 
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm run images
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Upload to blob storage
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+            az storage blob upload-batch --account-name bkapi -d 'images' -s .
+      - name: Purge CDN endpoint
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+           az cdn endpoint purge --content-paths  "/*" --profile-name "bkapi" --name "bkapi" --resource-group "selfhostrg"
+      - name: logout
+        run: |
+            az logout
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
