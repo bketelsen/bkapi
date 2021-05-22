@@ -34,8 +34,11 @@ export async function processImages(src, target) {
         const extension = extname(file.name);
         const name = basename(file.name, extension);
         const idx = mydata["images"].findIndex(i => { return i.id === name })
-        console.log(name,idx)
-        mydata["images"][idx]["formats"] = stats
+        if (idx > 0) {
+          mydata["images"][idx]["formats"] = stats
+        } else {
+          console.log("yaml not found",file,name)
+        }
       }
       if (file.isDirectory()) {
         const newsrc = join(imageDir, file.name)
