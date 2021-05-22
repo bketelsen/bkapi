@@ -52,6 +52,7 @@ These steps run sequentially in the action.
 * Render pages -- builds og images script
 * Run articles script
 * Run pages script
+* Change permissions on output data from blox build
 * process images
 * create GH Release called "Data" with blox data
 * deploy to vercel
