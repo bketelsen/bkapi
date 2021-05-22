@@ -42,7 +42,7 @@ jobs:
         with:
           directory: .
           script: pages.sh
-      - run: ls -al data/.build/data.json
+      - run: sudo chmod 777 data/.build/data.json
       - name: Use Node.js 14
         uses: actions/setup-node@v1
         with:
