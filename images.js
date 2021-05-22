@@ -13,6 +13,7 @@ export async function processImages(src, target) {
   try {
     const jsonString = fs.readFileSync("./data/.build/data.json");
     const mydata = JSON.parse(jsonString);
+    console.log(mydata);
 
     for (const file of files) {
       if (file.isFile()) {
