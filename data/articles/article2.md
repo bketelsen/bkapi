@@ -26,6 +26,6 @@ Porro eum id sit quia expedita. Alias expedita asperiores. Corporis ex eum atque
 
 ```js
 function bob() {
-	return true;
+  return true;
 }
 ```
