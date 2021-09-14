@@ -40,3 +40,7 @@ dist/
 # secrets
 scripts/azuresp.json
 scripts/deleteblobs.sh
+.envrc
+
+.build/
+originaldata/

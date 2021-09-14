@@ -13,12 +13,11 @@ export async function processImages(src, target) {
   try {
     const jsonString = fs.readFileSync("data/.build/data.json");
     const mydata = JSON.parse(jsonString);
-    console.log(mydata);
 
     for (const file of files) {
       if (file.isFile()) {
         const stats = await Image(imageDir + '/' + file.name, {
-          widths: [300, 600, 1000, 1400], // edit to your heart's content
+          widths: [300, 600, 1000, 1200, 1400, 1600, 1800, 2000], // edit to your heart's content
           outputDir: target,
           urlPath: "/g/images/",
           filenameFormat: (id, src, width, format) => {
@@ -33,12 +32,32 @@ export async function processImages(src, target) {
 
         const extension = extname(file.name);
         const name = basename(file.name, extension);
-        const idx = mydata["images"].findIndex(i => { return i.id === name })
-        if (idx > 0) {
+        const idx = mydata["images"].findIndex((i) => {
+          return i.id === name
+        })
+        if (idx > -1) {
           mydata["images"][idx]["formats"] = stats
         } else {
-          console.log("yaml not found",file,name)
+          console.log("yaml not found", file, name)
         }
+        let lowsrc = stats.jpeg[0];
+        let highsrc = stats.jpeg[stats.jpeg.length - 1];
+        let sizes = "100vw"
+
+        const imgTag = `<picture>
+    ${Object.values(stats).map(imageFormat => {
+          return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+        }).join("\n")}
+      <img
+        src="${lowsrc.url}"
+        width="${highsrc.width}"
+        height="${highsrc.height}"
+        alt="${mydata["images"][idx]["file_name"]}"
+        loading="lazy"
+        decoding="async">
+    </picture>`;
+        mydata["images"][idx]["image_tag"] = imgTag
+
       }
       if (file.isDirectory()) {
         const newsrc = join(imageDir, file.name)

@@ -11,17 +11,20 @@
 		}
 
 		title:             string @template("My New Article")
-		excerpt:           string @template("Small Description")
+		summary:           string @template("Small Description")
 		featured:          bool | *false
 		draft:             bool | *false
-		publish_date:      string @template("2020-01-01")
-		image_id?:            string
-		last_edit_date?:   string
+		date:      string @template("2020-01-01")
+		author_id:  	   string @relationship(Author)
+		layout?: string 
+		image_id?:         string @relationship(Image)
+		images?:		[...string] 
+		lastmod?:   string
 		edit_description?: string
 		body?:             string @template("My Awesome Article")
-		tags?: [...string]
-		category_id?: string
-		profile_id?:  string
+		tags?: 			   [...string]
+		category_id?: 	   string @relationship(Category)
+
 	}
 
 }

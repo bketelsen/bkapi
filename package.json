@@ -4,23 +4,24 @@
   "description": "cueblox workflow",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js --license licenses.txt",
-    "images": "node dist/index.js public/images public/g/images",
-    "local": "vercel dev --listen 4000"
+    "images": "node scripts/ogimage.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy-img": "^0.8.3",
-    "@vercel/ncc": "^0.28.5",
     "aws-sdk": "^2.903.0",
+    "canvas": "^2.8.0",
+    "cloudinary-build-url": "^0.2.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-sharp": "^4.2.24",
     "got": "^11.8.2",
+    "gray-matter": "^4.0.3",
     "json-graphql-server": "^2.2.3",
     "json-server": "^0.16.3",
-    "sync-fetch": "^0.3.0"
+    "node-canvas": "^2.7.0",
+    "sync-fetch": "^0.3.0",
+    "words-array": "^1.0.1"
   }
 }

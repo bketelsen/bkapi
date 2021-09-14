@@ -12,8 +12,7 @@
 
 		name:        string @template("Name")
 		description: string @template("Description")
-    	image_id?: 	 string
-		color?:		 string @template("bg-pink-600")
+		image_id?: 	 string @relationship(Image)
 		body?:       string @template("This is my category for ...")
 	}
 

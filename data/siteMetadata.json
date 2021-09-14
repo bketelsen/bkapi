@@ -1,0 +1,20 @@
+{
+  "title": "Brian Ketelsen",
+  "author": "Brian Ketelsen",
+  "headerTitle": "brian.dev",
+  "description": "It's just someone else's computer",
+  "language": "en-us",
+  "siteUrl": "https://www.brian.dev",
+  "siteRepo": "https://github.com/bketelsen/nextblog",
+  "siteLogo": "/static/images/logo.png",
+  "image": "/static/images/avatar.png",
+  "socialBanner": "/static/images/briandev.png",
+  "email": "mail@bjk.fyi",
+  "github": "https://github.com/bketelsen",
+  "twitter": "https://twitter.com/bketelsen",
+  "facebook": "https://facebook.com/bketelsen",
+  "youtube": "https://youtube.com/bketelsen",
+  "linkedin": "https://www.linkedin.com/bketelsen",
+  "locale": "en-US",
+  "ogEndpoint": "https://ogbriandev.azurewebsites.net/api/ogimage"
+}

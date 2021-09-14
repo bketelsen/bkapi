@@ -11,7 +11,7 @@
 		}
 
 		url:         string @template("https://google.com")
-		profile_id?: string
+		author_id?: string @template("bketelsen") @relationship(Author)
 		brand_name:  string @template("Your Name")
 		body?:       string
 		primary_navigation?: [...#NavigationItem]

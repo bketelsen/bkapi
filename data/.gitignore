@@ -1,7 +1,0 @@
-
-# comment
-node_modules
-.build
-.envrc
-images/**/*.json
-
