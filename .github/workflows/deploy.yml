@@ -16,7 +16,7 @@ jobs:
         with:
           directory: .
           extraArgs: -i 
-      - run: sudo chmod 777 data/build/data.json
+      - run: sudo chmod 777 build/data.json
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -24,7 +24,7 @@ jobs:
           prerelease: true
           title: "CueBlox"
           files: |
-            data/build/data.json
+            build/data.json
 
       - uses: amondnet/vercel-action@v20
         with:
