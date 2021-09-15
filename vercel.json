@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "public": false,
+    "github": {
+      "enabled": false
+    },
+    "functions": {
+        "api/index.js": {
+          "includeFiles": "/api/index.js"
+
+        }
+      },
+    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+}
