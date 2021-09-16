@@ -3,4 +3,14 @@ excerpt: Get your data under control
 draft: true
 air_date: '2020-09-15'
 author_id: bketelsen
-guest1: rawkode
+guests:
+  - name: David Flanigan
+    company: CueBlox
+    email: bob@smith.dev
+    avatar: https://avatars.dicebear.com/v2/bottts/bob.svg
+    occupation: Cue Slinger
+    twitter: rawkode
+    linkedin: rawkode
+    github: rawkode
+    youtube: rawkode
+    twitch: rawkode
