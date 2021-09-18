@@ -1,10 +1,10 @@
 ---
 title: Egg Bites
 date: '2019-09-13'
-image_id: eggbites
+image: eggbites
 summary: 'Quick Recipe for a home-made version of Starbucks Sous-vide Egg Bites'
 tags: ['recipe']
-author_id: bketelsen
+author: bketelsen
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 date: '2016-05-04'
-image_id: new-tricks/cubicroot-xyz-rFNVqR2rJE0-unsplash
+image: new-tricks/cubicroot-xyz-rFNVqR2rJE0-unsplash
 tags: ['frontend', 'javascript']
 title: 'New Tricks - notes as I learn modern front-end development'
 summary: 'New Tricks - notes as I learn modern front-end development'
-author_id: bketelsen
+author: bketelsen
 
 ---
 

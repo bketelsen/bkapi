@@ -1,10 +1,10 @@
 ---
 date: '2015-12-05'
-image_id: tastyworms/sandworm-bread-03
+image: tastyworms/sandworm-bread-03
 tags: ['dune', 'recipes']
 title: 'Tasty Worms'
 summary: 'Tasty Worms'
-author_id: bketelsen
+author: bketelsen
 
 ---
 

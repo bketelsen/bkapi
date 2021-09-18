@@ -1,6 +1,6 @@
 ---
 name: Brian Ketelsen
-image_id: logo
+image: logo
 occupation: Cloud Developer Advocate
 company: Microsoft/Azure
 email: mail@bjk.fyi

@@ -1,11 +1,11 @@
 ---
-category_id: development
+category: development
 date: '2016-09-19'
-image_id: errgroup/nick-taylor-gDQ99yDy1M4-unsplash
+image: errgroup/nick-taylor-gDQ99yDy1M4-unsplash
 tags: ['go']
 title: 'sync.ErrGroup'
 summary: 'sync.ErrGroup'
-author_id: bketelsen
+author: bketelsen
 
 ---
 

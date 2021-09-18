@@ -1,10 +1,10 @@
 ---
 title: Arrested DevOps Appearance on Krustlet
 date: '2020-04-14'
-image_id: arrested-devops-appearance-on-krustlet/b2iviaMJtoU
+image: arrested-devops-appearance-on-krustlet/b2iviaMJtoU
 summary: 'Podcast about Rust, Kubernetes, and Web Assembly'
 tags: ['rust', 'wasm', 'podcast', 'kubernetes']
-author_id: bketelsen
+author: bketelsen
 ---
 
 I had a great time on the Arrested DevOps podcast with Bridget Kromhout.

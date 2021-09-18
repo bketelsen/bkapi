@@ -3,8 +3,8 @@ title: Organizing Documents with Some AI, ML, and Elbow Grease
 date: '2019-09-03'
 summary: 'Organizing my loose documents with some machine learning, cognitive services, and elbow grease.'
 tags: ['ml', 'linux', 'azure']
-image_id: ai-ml-documents-one/IGa3Md8wP6g
-author_id: bketelsen
+image: ai-ml-documents-one/IGa3Md8wP6g
+author: bketelsen
 ---
 
 In this first post of (likely) a multi-part series I'm going to discuss how I am using machine learning, AI, and good old-fashioned elbow grease to make sense of the 3000 files in my `~/Documents/Unfiled` directory.
@@ -26,7 +26,7 @@ So now we're here. Where `here` is a place where I can't find anything I need an
 
 I'd like to take that folder of 3000 random unclassified documents and sort them into something more clear. I think sorting them by originating source (Supplier, Vendor, Biller, Organization) is a good first step. Eventually I'd like to sort them by date group too. Probably by Year, then Month.
 
-For a bonus, I'd love to do a [projected filesystem](https://docs.microsoft.com/en-us/windows/win32/projfs/projected-file-system?WT.mc_id=none-twitter-brketels) sort of thing in Windows and a [Plan9](https://9p.io/wiki/plan9/Installing_a_Plan_9_File_Server/index.html) type server on Mac/Linux using FUSE. It'd be really convenient to be able to get at documents from a Filesystem interface by using different facets like keywords, dates, categories, etc. That might fit more cleanly with the way I think, too. But, again, that's a stretch goal, because we'll need all that metadata first.
+For a bonus, I'd love to do a [projected filesystem](https://docs.microsoft.com/en-us/windows/win32/projfs/projected-file-system?WT.mc=none-twitter-brketels) sort of thing in Windows and a [Plan9](https://9p.io/wiki/plan9/Installing_a_Plan_9_File_Server/index.html) type server on Mac/Linux using FUSE. It'd be really convenient to be able to get at documents from a Filesystem interface by using different facets like keywords, dates, categories, etc. That might fit more cleanly with the way I think, too. But, again, that's a stretch goal, because we'll need all that metadata first.
 
 If you're old enough to remember [BeOS Filesystem](https://arstechnica.com/information-technology/2018/07/the-beos-filesystem/), it would have solved nearly all of this. Someday we'll get back to the database/filesystem mashup that truly needs to exist.
 

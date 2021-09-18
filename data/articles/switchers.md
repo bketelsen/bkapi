@@ -1,10 +1,10 @@
 ---
 date: '2016-11-07'
-image_id: switchers/getamac
+image: switchers/getamac
 tags: ['hacks', 'i3', 'windows', 'linux', 'mac']
 title: 'Switching - Irony and Operating systems'
 summary: 'Switching - Irony and Operating systems'
-author_id: bketelsen
+author: bketelsen
 
 ---
 

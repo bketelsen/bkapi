@@ -1,10 +1,10 @@
 ---
 title: Bash Helpers for Quick Installs
 date: '2020-08-14'
-image_id: install-func/4pPzKfd6BEg
+image: install-func/4pPzKfd6BEg
 summary: 'A quick helper function and directory layout for repeatable software installs.'
 tags: ['linux', 'open source', 'terminal']
-author_id: bketelsen
+author: bketelsen
 
 ---
 

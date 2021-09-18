@@ -3,9 +3,9 @@ title: List The Azure Virtual Machines Available
 date: '2020-08-25'
 summary: 'Get a list of the different VM base images available on Azure'
 tags: ['azure', 'cloud']
-image_id: gophercon-on-azure/azure
+image: gophercon-on-azure/azure
 layout: PostSimple
-author_id: bketelsen
+author: bketelsen
 
 ---
 

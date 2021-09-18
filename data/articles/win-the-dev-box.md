@@ -1,10 +1,10 @@
 ---
 title: Windows for Open Source Development
 date: '2020-02-24'
-image_id: h3GAGi5tXMU
+image: h3GAGi5tXMU
 summary: 'A Series on Using Windows for Open Source Development'
 tags: ['windows', 'linux', 'open source', '30-daywslchallenge']
-author_id: bketelsen
+author: bketelsen
 
 ---
 
@@ -45,7 +45,7 @@ After unboxing your new laptop the first thing to do is rename it. Windows comes
 
 `Desktop-R4NDH3X` isn't my speed. When it asks you to reboot, you can choose the "later" option, we have plenty of rebooting coming up.
 
-Go to `Start > Settings > System > About` and click the `Rename this PC` button. I like to name my computers after [planets in the Dune series of novels](https://dune.fandom.com/wiki/category_id:Planets), but you do you...
+Go to `Start > Settings > System > About` and click the `Rename this PC` button. I like to name my computers after [planets in the Dune series of novels](https://dune.fandom.com/wiki/category:Planets), but you do you...
 
 ![Rename PC](wsl/renamepc)
 

@@ -1,10 +1,10 @@
 ---
 date: '2016-06-18'
-image_id: career-2-0-go-training-videos-speaking/mikael-kristenson-3aVlWP-7bg8-unsplash
+image: career-2-0-go-training-videos-speaking/mikael-kristenson-3aVlWP-7bg8-unsplash
 tags: ['speaking', 'training']
 title: 'Career 2.0 - Go Training, Videos, Speaking'
 summary: 'Career 2.0 - Go Training, Videos, Speaking'
-author_id: bketelsen
+author: bketelsen
 
 ---
 
@@ -28,7 +28,7 @@ I'm available for short term and project based [consulting](https://brianketelse
 
 #### Online Training
 
-I've started an [online learning center](http://learn.brianketelsen.com) where my first course is available to purchase. It's a deep dive into the amazing `goa` code generation framework for building APIs in Go. The course isn't complete yet, but if you [buy it now](http://learn.brianketelsen.com/courses/master-api-development-with-goa?product_id=140234&coupon_code=GOAVIDEO) you'll get a great discounted rate and you can follow along as new lessons are released. The `goa` class is the first of many. Some will be free, but most will be inexpensive like this first one. If you have ideas for topics you want me to cover, I'd love your feedback. I plan to cover topics including:
+I've started an [online learning center](http://learn.brianketelsen.com) where my first course is available to purchase. It's a deep dive into the amazing `goa` code generation framework for building APIs in Go. The course isn't complete yet, but if you [buy it now](http://learn.brianketelsen.com/courses/master-api-development-with-goa?product=140234&coupon_code=GOAVIDEO) you'll get a great discounted rate and you can follow along as new lessons are released. The `goa` class is the first of many. Some will be free, but most will be inexpensive like this first one. If you have ideas for topics you want me to cover, I'd love your feedback. I plan to cover topics including:
 
 - Microservices
 - Distributed Applications / Coordination (Go focused)

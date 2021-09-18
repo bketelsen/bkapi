@@ -13,7 +13,7 @@
 		name: string @template("Bob Smith")
 		company?:   string @template("CueBlox")
 		email?:   string @template("bob@smith.dev")
-		image_id?:   string @relationship(Image)
+		image?:   string @relationship(Image)
 		occupation?:     string @template("Cue Slinger")
 		body?:      string @template("☕️ Required")
     	twitter?:   string @template("bketelsen")

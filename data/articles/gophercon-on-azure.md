@@ -3,8 +3,8 @@ date: '2017-07-31'
 tags: ['go', 'azure']
 title: 'Learn With Me: Moving Gophercon to Azure'
 summary: 'Learn With Me: Moving Gophercon to Azure'
-image_id: gophercon-on-azure/azure
-author_id: bketelsen
+image: gophercon-on-azure/azure
+author: bketelsen
 
 ---
 

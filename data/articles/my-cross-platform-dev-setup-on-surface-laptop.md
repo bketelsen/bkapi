@@ -1,10 +1,10 @@
 ---
 date: '2017-09-29'
-image_id: my-cross-platform-dev-setup-on-surface-laptop/desktop
+image: my-cross-platform-dev-setup-on-surface-laptop/desktop
 tags: ['development', 'linux', 'windows']
 title: 'My Cross-Platform Dev Setup on Surface Laptop'
 summary: 'My Cross-Platform Dev Setup on Surface Laptop'
-author_id: bketelsen
+author: bketelsen
 
 ---
 

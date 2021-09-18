@@ -1,11 +1,11 @@
 ---
-category_id: development
+category: development
 date: '2017-12-13'
 tags: ['wsl']
 title: 'Getting Crazy with Windows Subsystem for Linux'
 summary: 'Getting Crazy with Windows Subsystem for Linux'
-image_id: 2017/12/startmenu
-author_id: bketelsen
+image: 2017/12/startmenu
+author: bketelsen
 
 ---
 

@@ -14,11 +14,11 @@
 		summary:           	string @template("Short description of the appearance.")
 		featured:          	bool | *false
 		draft:          	bool | *false
-		author_id:			string @template("bketelsen") @relationship(Author)
+		author:			string @template("bketelsen") @relationship(Author)
     	host_name?:         string @template("Gophercon")
     	host_url?:          string @template("https://gophercon.com")
 		date:   			string @template("2020-01-01")
-		image_id?:           string @relationship(Image)
+		image?:           string @relationship(Image)
 		tags?:			  	[...string] 
     	event_url?:        	string @template("https://www.gophercon.com/gc21/talks/bketelsen")
     	deck?:        		string 

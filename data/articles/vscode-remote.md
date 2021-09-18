@@ -1,10 +1,10 @@
 ---
 title: VS Code Remote Development
-image_id: vscode-remote/fpoHihXiMhg
+image: vscode-remote/fpoHihXiMhg
 summary: 'Use VS Code against a remote computer or container'
 tags: ['vscode', 'development']
 date: '2018-12-05'
-author_id: bketelsen
+author: bketelsen
 
 ---
 

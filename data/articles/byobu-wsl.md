@@ -1,11 +1,11 @@
 ---
 title: Byobu on WSL
 date: '2019-10-09'
-image_id: mbLr6NEatMI
+image: mbLr6NEatMI
 summary: 'Make your life easier with Byobu'
 tags: ['terminal']
 layout: PostImage
-author_id: bketelsen
+author: bketelsen
 
 ---
 

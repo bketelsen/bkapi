@@ -20,4 +20,4 @@ setup:
 	npm ci
 
 serve:
-	cd .build && python3 -m http.server
+	cd build && python3 -m http.server

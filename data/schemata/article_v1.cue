@@ -15,15 +15,15 @@
 		featured:          bool | *false
 		draft:             bool | *false
 		date:      string @template("2020-01-01")
-		author_id:  	   string @relationship(Author)
+		author:  	   string @relationship(Author)
 		layout?: string 
-		image_id?:         string @relationship(Image)
+		image?:         string @relationship(Image)
 		images?:		[...string] 
 		lastmod?:   string
 		edit_description?: string
 		body?:             string @template("My Awesome Article")
 		tags?: 			   [...string]
-		category_id?: 	   string @relationship(Category)
+		category?: 	   string @relationship(Category)
 
 	}
 

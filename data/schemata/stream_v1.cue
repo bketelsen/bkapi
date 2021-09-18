@@ -14,12 +14,12 @@
 		excerpt:      	string @template("Small description about my page")
 		draft:        	bool | *false
 		air_date: 		string @template("2020-01-01")
-		author_id:		string @template("bketelsen") @relationship(Author)
+		author:		string @template("bketelsen") @relationship(Author)
 		guests?:	   	[...#Guest]	
-   	 	image_id?: 		string @relationship(Image)
+   	 	image?: 		string @relationship(Image)
 		body?:        	string
 		tags?: 			[...string]
-		category_id?: 	string @relationship(Category)
+		category?: 	string @relationship(Category)
 	}
 
 
@@ -28,7 +28,7 @@
 		company?:   string @template("CueBlox")
 		email?:   string @template("bob@smith.dev")
 		avatar?:   string @template("https://avatars.dicebear.com/v2/bottts/bob.svg")
-		image_id?:   string @relationship(Image)
+		image?:   string @relationship(Image)
 		occupation?:     string @template("Cue Slinger")
 		body?:      string @template("☕️ Required")
     	twitter?:   string @template("bketelsen")

@@ -12,7 +12,7 @@
 
 		name:        string @template("Name")
 		description: string @template("Description")
-		image_id?: 	 string @relationship(Image)
+		image?: 	 string @relationship(Image)
 		body?:       string @template("This is my category for ...")
 	}
 
